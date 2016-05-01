@@ -1,0 +1,97 @@
+
+@font-face { 
+  font-family: Amuro; font-weight: italic; src: url('../fonts/Amuro-Italic.otf'); 
+}
+@font-face { 
+  font-family: Amuro-Condensed; font-weight: normal; src: url('../fonts/Amuro-Condensed.otf'); 
+}
+
+body {
+	padding-top: 50px;
+}
+
+.navbar-brand {
+    height: auto;
+    font-family: Amuro;
+    font-weight: italic;
+    font-size: 28px;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav {
+    padding: 10px 5px;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover { 
+
+    background: none;
+    color:#FC4444;
+}
+
+.navbar .nav a, .navbar-brand {
+
+   -webkit-transition: color 0.3s ease-in;
+   -moz-transition: color 0.3s ease-in;
+   -o-transition: color 0.3s ease-in;
+   -ms-transition: color 0.3s ease-in;
+   transition: color 0.3s ease-in;
+}
+
+
+.navbar .nav > li {
+    font-family: Amuro-Condensed;
+    font-size: 24px;
+}
+
+
+
+.navbar-toggle {
+    margin-top: 15px;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.25);
+}
+
+
+
+body { font-family: sans-serif; }
+
+.gallery {
+  margin-top: 100px;
+  background: #EEE;
+  height: 100%;
+}
+
+
+.gallery-cell {
+  width: 35%;
+  height: 450px;
+  margin-right: 10px;
+  background: #333;
+
+  position: relative;
+}
+
+.gallery-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+.news-row {
+
+  margin-top: 100px;
+
+}
