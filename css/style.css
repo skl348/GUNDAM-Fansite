@@ -8,6 +8,7 @@
 
 body {
 	padding-top: 50px;
+  background-color: #222222;;
 }
 
 .navbar-brand {
@@ -25,20 +26,38 @@ body {
     padding: 10px 5px;
 }
 
+/*
 .navbar .nav > .active > a,
-.navbar .nav > .active > a:hover { 
+.navbar .nav > .active > a:hover
+.navbar .nav > .active > a:focus { 
+
+    background: none;
+    color:#FC4444;
+    
+}
+*/
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus {
 
     background: none;
     color:#FC4444;
 }
 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background: none;
+    color:#FD9B9B;
+
+}
+
+
 .navbar .nav a, .navbar-brand {
 
-   -webkit-transition: color 0.3s ease-in;
-   -moz-transition: color 0.3s ease-in;
-   -o-transition: color 0.3s ease-in;
-   -ms-transition: color 0.3s ease-in;
-   transition: color 0.3s ease-in;
+   -webkit-transition: color 0.6s ease-in;
+   -moz-transition: color 0.6s ease-in;
+   -o-transition: color 0.6s ease-in;
+   -ms-transition: color 0.6s ease-in;
+   transition: color 0.6s ease-in;
 }
 
 
@@ -53,24 +72,42 @@ body {
     margin-top: 15px;
 }
 
+.separator, .carousel-separator{
+    background-color:#FC4444;;
+}
+
+.separator {
+    height: 30px;
+}
+
+.carousel-separator {
+    margin-top:10px;
+    height: 15px;
+}
+
+
 .carousel-caption {
     background: rgba(0,0,0,0.25);
 }
 
-
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body { font-family: sans-serif; }
 
+/*
 .gallery {
-  margin-top: 100px;
-  background: #EEE;
-  height: 100%;
+  background: #333;
+  !height: 100%;
+  height: 450px;
 }
 
 
 .gallery-cell {
+  height: 100%;
   width: 35%;
-  height: 450px;
   margin-right: 10px;
   background: #333;
 
@@ -88,10 +125,66 @@ body { font-family: sans-serif; }
   transform: translateY(-50%);
 
 }
+*/
+
+.gallery {
+  background-color: transparent;
+  height:450px;
+}
+
+
+.gallery-cell {
+  height: 100%;
+  background-color: transparent;
+  margin-right:10px;
+}
+
+.gallery-cell img {
+  height: 100%;
+}
 
 
 .news-row {
 
   margin-top: 100px;
 
+}
+
+
+/* Breakpiont at 800px to collapse navbar */
+@media (max-width: 800px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
 }
