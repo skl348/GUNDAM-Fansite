@@ -205,6 +205,60 @@ body { font-family: sans-serif; }
 
 }
 
+.panels {
+  margin-top: 40px;
+}
+
+.panel-heading:hover {
+  cursor: pointer;
+  background-color: #a6a6a6;
+}
+
+.panel-default > .panel-heading {
+  background-color: #E8E8E8;
+}
+
+.panel-body {
+  padding:0px;
+}
+
+.color-ef {
+  background-color: #006666;
+  color: white;
+}
+
+.color-zeon {
+  background-color: #A40F2D;
+  color: white;
+}
+
+.panel-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.img-responsive { 
+  width:auto;
+  max-height: 100px;
+}
+
+.table {
+  margin-bottom: 0px;
+}
+
+
+td {
+  text-align: center;
+  font-weight: bold;
+}
+
+td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 
 
