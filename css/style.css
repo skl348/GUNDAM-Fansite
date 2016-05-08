@@ -14,13 +14,13 @@ body {
 .navbar-brand {
     height: auto;
     font-family: Amuro;
-    font-weight: italic;
     font-size: 28px;
 }
 
 .navbar-brand img {
     height: 40px;
 }
+
 
 .navbar-nav {
     padding: 10px 5px;
