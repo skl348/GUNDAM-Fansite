@@ -163,7 +163,7 @@ body { font-family: sans-serif; }
 *, *:before, *:after {box-sizing:  border-box !important;}
 
 
-.row {
+.news-row {
  -moz-column-width: 300px;
  -webkit-column-width: 300px;
  -moz-column-gap: 10px;
@@ -260,3 +260,4 @@ body { font-family: sans-serif; }
     display:block !important;
   }
 }
+
