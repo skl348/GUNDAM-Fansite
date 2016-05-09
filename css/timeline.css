@@ -66,6 +66,7 @@ header h1 {
   width: 4px;
   background: #d7e4ed;
 }
+/*
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 3em;
@@ -76,6 +77,7 @@ header h1 {
     margin-left: -2px;
   }
 }
+*/
 
 .cd-timeline-block {
   position: relative;
@@ -92,6 +94,7 @@ header h1 {
 .cd-timeline-block:last-child {
   margin-bottom: 0;
 }
+/*
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
     margin: 4em 0;
@@ -103,6 +106,7 @@ header h1 {
     margin-bottom: 0;
   }
 }
+*/
 
 .cd-timeline-img {
   position: absolute;
@@ -135,29 +139,18 @@ header h1 {
   background: #f0ca45;
 }
 */
+/*
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 60px;
     height: 60px;
     left: 50%;
     margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
-
-  /*
-  .cssanimations .cd-timeline-img.is-hidden {
-    visibility: hidden;
-  }
-  .cssanimations .cd-timeline-img.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-1 0.6s;
-    -moz-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
-  }
-  */
 }
+*/
 
 
 /*
@@ -299,23 +292,30 @@ header h1 {
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
-@media only screen and (min-width: 768px) {
-  .cd-timeline-content h2 {
-    font-size: 25px;
-    font-size: 1.25rem;
+
+@media only screen and (min-width: 1475px) {
+
+  #cd-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
-  .cd-timeline-content p {
-    font-size: 15px;
+  #cd-timeline::before {
+    left: 50%;
+    margin-left: -2px;
   }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 14px;
-    font-size: 0.875rem;
+  
+  .cd-timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
   }
-}
-@media only screen and (min-width: 1170px) {
+
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    /*padding: 1.6em;*/
     width: 45%;
   } 
   .cd-timeline-content::before {
@@ -370,6 +370,25 @@ header h1 {
     animation: cd-bounce-2 0.6s;
   }
   */
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-timeline-content h2 {
+    font-size: 25px;
+    font-size: 1.25rem;
+  }
+  .cd-timeline-content p {
+    font-size: 15px;
+  }
+  .cd-timeline-content .cd-read-more, .cd-timeline-content {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+
+  .cd-date {
+    font-size: 18px;
+  }
+
 }
 
 
