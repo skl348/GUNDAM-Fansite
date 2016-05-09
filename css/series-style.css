@@ -18,12 +18,13 @@ p {
 
 #side-nav {
 	position: fixed;
+	margin-top: 40px;
 	margin-left: 20px;
 }
 
 .header, .sub-header  {
 	font-weight: bold;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .header {
